@@ -19,11 +19,15 @@ header {
 }
 
 /* Style the navigation bar */
+nav {
+  background-color: #FFB3D9; /* Pastel bubblegum pink */
+}
+
 nav ul {
   list-style: none; /* Remove bullet points */
   display: flex; /* Display items in a row */
   justify-content: center; /* Center the items */
-  padding: 0;
+  padding: 0; /* Remove default padding */
 }
 
 nav ul li {
@@ -55,8 +59,9 @@ h2 {
 section {
   background-color: #FFB3D9; /* Pastel bubblegum pink background for sections */
   padding: 20px;
-  margin: 20px 0; /* Add some space between sections */
+  margin: 20px auto; /* Center the boxes and add space around them */
   border-radius: 5px; /* Rounded corners for the sections */
+  max-width: 800px; /* Limit the width of the sections */
 }
 
 /* Footer styling */
