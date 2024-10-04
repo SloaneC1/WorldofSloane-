@@ -1,87 +1,14 @@
-/* Reset some default styles */
-body, h1, h2, p, ul {
+/* Basic Reset */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-/* Set a midnight navy background */
-body {
-  background-color: #001F3F; /* Midnight navy */
-  color: #000000; /* Black text color */
-  font-family: 'Arial', sans-serif; /* Use a clean font */
-}
-
-/* Style the header */
-header {
-  background-color: #FFB3D9; /* Pastel bubblegum pink */
-  padding: 20px;
-  text-align: center;
-}
-
-/* Style the navigation bar */
-nav {
-  background-color: #FFB3D9; /* Pastel bubblegum pink */
-}
-
-nav ul {
-  list-style: none; /* Remove bullet points */
-  display: flex; /* Display items in a row */
-  justify-content: center; /* Center the items */
-  padding: 0; /* Remove default padding */
-}
-
-nav ul li {
-  margin: 0 15px; /* Spacing between menu items */
-}
-
-nav a {
-  color: #001F3F; /* Midnight navy links */
-  text-decoration: none; /* Remove underline */
-  font-weight: bold;
-}
-
-nav a:hover {
-  text-decoration: underline; /* Underline links on hover */
-}
-
-/* Main section styling */
-main {
-  padding: 20px;
-}
-
-/* Section titles */
-h2 {
-  color: #FFB3D9; /* Pastel bubblegum pink for section titles */
-  margin-bottom: 10px;
-  color: #000000; /* Black text color */
-  font-family: 'Arial', sans-serif; /* Use a clean font */
-}
-
-/* Section styling with pastel pink background */
-section {
-  background-color: #FFB3D9; /* Pastel bubblegum pink background for sections */
-  padding: 20px;
-  margin: 20px auto; /* Center the boxes and add space around them */
-  border-radius: 5px; /* Rounded corners for the sections */
-  max-width: 800px; /* Limit the width of the sections */
-}
-
-/* Footer styling */
-footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #FFB3D9; /* Pastel bubblegum pink footer */
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-  nav ul {
-      flex-direction: column; /* Stack the links on smaller screens */
-  }
-}
-/* Ensure the body takes the full height of the viewport */
+/* General Styles */
 html, body {
   height: 100%; /* Full height */
+  font-family: Arial, sans-serif; /* Change to your preferred font */
 }
 
 /* Main wrapper to push the footer down */
@@ -91,15 +18,52 @@ html, body {
   min-height: 100vh; /* Full height */
 }
 
-/* Main content area */
-main {
-  flex: 1; /* Grow to fill space */
+/* Header styles */
+header {
+  background-color: #2c3e50; /* Midnight navy */
+  color: #ffffff; /* White text */
+  padding: 20px;
+  text-align: center;
 }
 
-/* Footer styling */
+/* Navigation styles */
+nav ul {
+  list-style: none; /* Remove bullets */
+  display: flex; /* Horizontal layout */
+  justify-content: center; /* Center the items */
+  margin: 10px 0;
+}
+
+nav ul li {
+  margin: 0 15px; /* Space between items */
+}
+
+nav ul li a {
+  text-decoration: none; /* Remove underline */
+  color: #FFB3D9; /* Pastel bubblegum pink */
+  font-weight: bold; /* Bold text */
+}
+
+/* Main content styles */
+main {
+  flex: 1; /* Grow to fill space */
+  padding: 20px;
+  background-color: #ecf0f1; /* Light background color */
+}
+
+/* Section styles */
+section {
+  margin: 20px 0; /* Space between sections */
+  padding: 20px;
+  background-color: #FFB3D9; /* Pastel bubblegum pink */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Footer styles */
 footer {
   text-align: center;
   padding: 10px;
-  background-color: #FFB3D9; /* Pastel bubblegum pink footer */
+  background-color: #2c3e50; /* Midnight navy */
+  color: #ffffff; /* White text */
   margin-top: auto; /* Push footer to the bottom */
 }
