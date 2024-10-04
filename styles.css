@@ -1,86 +1,22 @@
-/* General Styles */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  color: #333;
-  background-color: #f5f5f5;
-}
-
-nav {
-  background-color: #333;
-  padding: 15px;
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 15px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-}
-
-section {
-  padding: 60px;
-  margin: 20px;
-}
-
-#home {
-  background-color: #3498db;
-  color: white;
-  text-align: center;
-}
-
-#about, #portfolio, #contact {
-  background-color: white;
-  color: black;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.project {
-  border: 1px solid #ddd;
-  padding: 15px;
-  margin: 10px 0;
-}
-
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-}
-
 /* Reset some default styles */
 body, h1, h2, p, ul {
   margin: 0;
   padding: 0;
 }
 
-/* Set a midnight navy background and pastel bubblegum pink text color */
+/* Set a midnight navy background */
 body {
   background-color: #001F3F; /* Midnight navy */
-  color: #FFB3D9; /* Pastel bubblegum pink text */
+  color: #000000; /* Black text color */
   font-family: 'Arial', sans-serif; /* Use a clean font */
 }
 
 /* Style the header */
-  header {
-    background-color: #FFB3D9; /* Pastel bubblegum pink */
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+header {
+  background-color: #FFB3D9; /* Pastel bubblegum pink */
+  padding: 20px;
+  text-align: center;
 }
-
-
 
 /* Style the navigation bar */
 nav ul {
@@ -113,6 +49,14 @@ main {
 h2 {
   color: #FFB3D9; /* Pastel bubblegum pink for section titles */
   margin-bottom: 10px;
+}
+
+/* Section styling with pastel pink background */
+section {
+  background-color: #FFB3D9; /* Pastel bubblegum pink background for sections */
+  padding: 20px;
+  margin: 20px 0; /* Add some space between sections */
+  border-radius: 5px; /* Rounded corners for the sections */
 }
 
 /* Footer styling */
