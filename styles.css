@@ -1,4 +1,4 @@
-/* General Styles
+/* General Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -57,7 +57,7 @@ footer {
   color: white;
   text-align: center;
   padding: 10px 0;
-} */
+}
 
 /* Reset some default styles */
 body, h1, h2, p, ul {
