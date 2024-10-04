@@ -1,4 +1,4 @@
-/* General Styles */
+/* General Styles
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -57,4 +57,74 @@ footer {
   color: white;
   text-align: center;
   padding: 10px 0;
+} */
+
+/* Reset some default styles */
+body, h1, h2, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a midnight navy background and pastel bubblegum pink text color */
+body {
+  background-color: #001F3F; /* Midnight navy */
+  color: #FFB3D9; /* Pastel bubblegum pink text */
+  font-family: 'Arial', sans-serif; /* Use a clean font */
+}
+
+/* Style the header */
+  header {
+    background-color: #FFB3D9; /* Pastel bubblegum pink */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+
+
+/* Style the navigation bar */
+nav ul {
+  list-style: none; /* Remove bullet points */
+  display: flex; /* Display items in a row */
+  justify-content: center; /* Center the items */
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px; /* Spacing between menu items */
+}
+
+nav a {
+  color: #001F3F; /* Midnight navy links */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline; /* Underline links on hover */
+}
+
+/* Main section styling */
+main {
+  padding: 20px;
+}
+
+/* Section titles */
+h2 {
+  color: #FFB3D9; /* Pastel bubblegum pink for section titles */
+  margin-bottom: 10px;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #FFB3D9; /* Pastel bubblegum pink footer */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column; /* Stack the links on smaller screens */
+  }
 }
