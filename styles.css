@@ -53,6 +53,8 @@ main {
 h2 {
   color: #FFB3D9; /* Pastel bubblegum pink for section titles */
   margin-bottom: 10px;
+  color: #000000; /* Black text color */
+  font-family: 'Arial', sans-serif; /* Use a clean font */
 }
 
 /* Section styling with pastel pink background */
@@ -76,4 +78,28 @@ footer {
   nav ul {
       flex-direction: column; /* Stack the links on smaller screens */
   }
+}
+/* Ensure the body takes the full height of the viewport */
+html, body {
+  height: 100%; /* Full height */
+}
+
+/* Main wrapper to push the footer down */
+.wrapper {
+  display: flex; /* Use Flexbox */
+  flex-direction: column; /* Arrange children vertically */
+  min-height: 100vh; /* Full height */
+}
+
+/* Main content area */
+main {
+  flex: 1; /* Grow to fill space */
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #FFB3D9; /* Pastel bubblegum pink footer */
+  margin-top: auto; /* Push footer to the bottom */
 }
