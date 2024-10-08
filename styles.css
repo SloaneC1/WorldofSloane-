@@ -67,3 +67,86 @@ footer {
   color: #ffffff; /* White text */
   margin-top: auto; /* Push footer to the bottom */
 }
+
+/* About Page Styles */
+
+/* Introduction Section */
+.intro {
+  background-color: #f8c4cf; /* Pastel pink */
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.intro h2 {
+  margin-bottom: 10px;
+}
+
+/* Skills Section */
+.skills {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.skill-list {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.skill {
+  background-color: #f8c4cf;
+  padding: 15px;
+  border-radius: 8px;
+  width: 20%;
+  font-size: 1.1em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Timeline Section */
+.timeline {
+  padding: 20px 0;
+}
+
+.timeline ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.timeline li {
+  background-color: #eaf2f8; /* Light blue */
+  margin: 10px 0;
+  padding: 20px;
+  border-left: 5px solid #2c3e50; /* Navy for the timeline */
+  border-radius: 4px;
+  position: relative;
+}
+
+.timeline .year {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* Photo Section */
+.photos {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.photo-grid {
+  display: flex;
+  justify-content: space-around;
+}
+
+.photo-grid img {
+  width: 30%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.photo-grid img:hover {
+  transform: scale(1.05);
+}
