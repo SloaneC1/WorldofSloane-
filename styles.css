@@ -301,3 +301,81 @@ body {
 .prev:hover, .next:hover {
   background-color: #1a252f; /* Darker navy on hover */
 }
+
+/* Hero Section */
+.hero {
+  background-image: url('images/hero-image.jpg'); /* Hero image */
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3em;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.cta-button {
+  background-color: #FFB3D9; /* Pastel pink */
+  color: #2c3e50; /* Midnight navy */
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Section Styles */
+section {
+  padding: 20px;
+  text-align: center;
+}
+
+.project {
+  margin: 20px;
+  border: 1px solid #2c3e50;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* General Header and Footer Styles */
+header {
+  background-color: #2c3e50; /* Midnight navy */
+  padding: 10px 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #FFB3D9; /* Pastel bubblegum pink */
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #2c3e50; /* Midnight navy */
+  color: #ffffff;
+}
