@@ -15,22 +15,70 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="projects.html">Projects</a></li>
-          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html">About</a></li>
           <li><a href="hottakes.html">Hot Takes</a></li>
         </ul>
       </nav>
     </header>
 
-    <main>
-      <section>
-        <h2>Latest Hot Takes</h2>
-        <p>Share your opinions, thoughts, or current takes here.</p>
+
+      <section id="hot-takes">
+        <h2>Hot Takes</h2>
+        <div class="carousel">
+          <div class="carousel-inner">
+            <!-- Hot Take 1 -->
+            <div class="carousel-item active">
+              <p>"First Hot Take: The best pizza topping is definitely pineapple!"</p>
+            </div>
+            <!-- Hot Take 2 -->
+            <div class="carousel-item">
+              <p>"Second Hot Take: Cats are better pets than dogs!"</p>
+            </div>
+            <!-- Hot Take 3 -->
+            <div class="carousel-item">
+              <p>"Third Hot Take: Cold weather is better than hot weather!"</p>
+            </div>
+          </div>
+          <button class="prev">❮</button>
+          <button class="next">❯</button>
+        </div>
       </section>
-    </main>
 
     <footer>
       <p>© 2024 Sloane Carroll. All Rights Reserved.</p>
     </footer>
   </div>
+
+  <script>
+    let currentIndex = 0;
+    const items = document.querySelectorAll('.carousel-item');
+    const totalItems = items.length;
+
+    function showItem(index) {
+      const carouselInner = document.querySelector('.carousel-inner');
+      const offset = -index * 100;
+      carouselInner.style.transform = `translateX(${offset}%)`;
+
+      items.forEach((item, i) => {
+        item.classList.toggle('active', i === index);
+      });
+    }
+
+    document.querySelector('.next').addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % totalItems;
+      showItem(currentIndex);
+    });
+
+    document.querySelector('.prev').addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+      showItem(currentIndex);
+    });
+
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % totalItems;
+      showItem(currentIndex);
+    }, 5000);
+  </script>
+
 </body>
 </html>
